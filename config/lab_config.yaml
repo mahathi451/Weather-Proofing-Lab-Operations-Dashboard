@@ -1,0 +1,24 @@
+# Sensor API Configuration
+sensor_api:
+  endpoint: "https://api.lab-sensors.com/v2"
+  key: "your_api_key_here"
+  cache_ttl: 60  # seconds
+  timeout: 10     # seconds
+
+# Alert Thresholds  
+alert_thresholds:
+  temperature:
+    min: 18
+    max: 25
+    grace_period: 300  # seconds before alert
+  humidity:
+    min: 30
+    max: 60
+  pressure:
+    min: 970  # hPa
+    max: 1030
+
+# Historical Data Settings
+historical:
+  retention_days: 30
+  backup_schedule: "0 2 * * *"  # Daily at 2AM
