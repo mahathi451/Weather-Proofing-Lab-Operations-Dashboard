@@ -1,0 +1,4 @@
+__pycache__/
+*.csv
+config/lab_config.yaml
+.env
